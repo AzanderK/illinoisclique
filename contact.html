@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+    t = $('.form').offset();
+    t = t.top;
+    
+    s = $(window).scrollTop();
+    
+    d = t-s;
+    
+    if (d < 0) {
+        $('.banner').addClass('fixed');
+        $('.form').addClass('paddingTop');
+    } else {
+        $('.banner').removeClass('fixed');
+        $('.form').removeClass('paddingTop');
+    }
+});
+</script>
+<html>
+<head>
+    <style>
+.form {
+    width:500px;
+    margin: 100px auto;
+    border:1px solid #000;
+    padding:10px;
+}
+.banner {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    background:transparent;
+    height:auto;
+    width:auto;
+}
+.fixed{
+    position:fixed;
+    top: 40px;
+    left: 50px
+}
+.paddingTop{
+    padding-top:110px;
+}
+.header_img{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+}
+.header_cap{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+    border-bottom: 12px solid #de3b21;
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.title{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 275px;
+    height: auto;
+    background: transparent;
+}
+.overlay_image{
+    position: fixed;
+    top: 160px;
+    left: 40px;
+    width: 200px;
+    height: auto;
+    background: transparent;
+}
+.right_space{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+    width: 75%;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background: transparent;
+    margin-left: 275px;
+}
+.right_front{
+    position:absolute;
+    text-align: center;
+    top: 21%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background: transparent;
+    margin-left:auto;
+}
+.tab{
+  position: absolute;
+  height: 24%;
+  left: 3.2%;
+  margin-left:25%;
+  bottom: 0;
+}
+.tab2{
+  position: absolute;
+  height: 24%;
+  left: 13%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab3{
+  position: absolute;
+  height: 24%;
+  left: 24.2%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab4{
+  position: absolute;
+  height: 24%;
+  left: 35.2%;
+  margin-left: 25%;
+  bottom: 0; 
+}
+.tab5{
+  position: absolute;
+  height: 24%;
+  left: 48.9%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab6{
+  position: absolute;
+  height: 24%;
+  left: 55.1%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.footer{
+  position: absolute;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left:auto;
+  left: 0;
+  bottom: auto;
+  border-top: 5px solid #de3b21;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.contact{
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { 
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+    </style>
+</head>
+
+
+<body bgcolor="#000000" link="#de3b21" vlink="#ffffff" alink="#ffffff" ondragstart="returnfalse" onselectstart="return false">
+  <div class=form>
+  <div class="header"> <div class="header_cap">
+     <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
+     <div class=banner><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
+ 
+    <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
+    <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
+    <a href="photos.html"><img src="https://archive.org/download/IllinoisClique/Tab_3.png" class="tab3"></a>
+    <a href="calendar.html"><img src="https://archive.org/download/IllinoisClique/Tab_4.png" class="tab4"></a>
+    <a href="faq.html"><img src="https://archive.org/download/IllinoisClique/Tab_5.png" class="tab5"></a>
+    <a href="contact.html"><img src="https://archive.org/download/IllinoisClique/OpenTab_6.png" class="tab6"></a> 
+    </div>
+    <div class="right_space">
+      
+      <div class="contact">
+      <font size="5" color="white">Ask Us</font><br/> 
+<form method="POST" action="http://formspree.io/illinoisclique@gmail.com"> 
+  <input type="email" name="email" placeholder="Your email" width="100px"><br>
+  <textarea name="message" placeholder="Your question" rows="10" cols="65"></textarea><br>
+  <button type="submit">Send</button>
+</form>
+      </div>
+      
+    
+      
+      </div>
+    <div class="footer">
+        <p>Copyright © 2016 Illinois Clique</p>
+ </div>      
+</body> 

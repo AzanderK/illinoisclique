@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head><style type="text/css"></style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+    t = $('.form').offset();
+    t = t.top;
+    
+    s = $(window).scrollTop();
+    
+    d = t-s;
+    
+    if (d < 0) {
+        $('.banner').addClass('fixed');
+        $('.form').addClass('paddingTop');
+    } else {
+        $('.banner').removeClass('fixed');
+        $('.form').removeClass('paddingTop');
+    }
+});
+</script>
+
+
+    <style>
+.form {
+    width:500px;
+    margin: 100px auto;
+    border:1px solid #000;
+    padding:10px;
+}
+.banner {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    background:transparent;
+    height:auto;
+    width:auto;
+}
+.fixed{
+    position:fixed;
+    top: 40px;
+    left: 50px
+}
+.paddingTop{
+    padding-top:110px;
+}
+.header_img{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+}
+.header_cap{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+    border-bottom: 12px solid #de3b21;
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.title{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 275px;
+    height: auto;
+    background: transparent;
+}
+.overlay_image{
+    position: fixed;
+    top: 160px;
+    left: 40px;
+    width: 200px;
+    height: auto;
+    background: transparent;
+}
+.right_space{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+    width: 75%;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background: transparent;
+    margin-left: 275px;
+}
+.right_front{
+    position:absolute;
+    text-align: center;
+    top: 21%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background: transparent;
+    margin-left:auto;
+}
+.tab{
+  position: absolute;
+  height: 24%;
+  left: 3.2%;
+  margin-left:25%;
+  bottom: 0;
+}
+.tab2{
+  position: absolute;
+  height: 24%;
+  left: 13%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab3{
+  position: absolute;
+  height: 24%;
+  left: 24.2%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab4{
+  position: absolute;
+  height: 24%;
+  left: 35.2%;
+  margin-left: 25%;
+  bottom: 0; 
+}
+.tab5{
+  position: absolute;
+  height: 24%;
+  left: 48.9%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab6{
+  position: absolute;
+  height: 24%;
+  left: 55.1%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.footer{
+  position: absolute;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left:auto;
+  left: 0;
+  bottom: auto;
+  border-top: 5px solid #de3b21;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+.box{
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ffffff;
+}
+.linkbox{
+  line-height: 2;
+  text-align:left;
+  margin-left: 25%;
+  padding-bottom: 30px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { 
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+    </style>
+</head>
+
+
+<body ondragstart="returnfalse" onselectstart="return false" link="#ffffff" alink="#ffffff" bgcolor="#000000" vlink="grey">
+  <div class="form paddingTop">
+  <div class="header"> <div class="header_cap">
+     <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
+     <div class="banner fixed"><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
+ 
+    <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
+    <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
+    <a href="photos.html"><img src="https://archive.org/download/IllinoisClique/Tab_3.png" class="tab3"></a>
+    <a href="calendar.html"><img src="https://archive.org/download/IllinoisClique/Tab_4.png" class="tab4"></a>
+    <a href="faq.html"><img src="https://archive.org/download/IllinoisClique/OpenTab_5.png" class="tab5"></a>
+    <a href="contact.html"><img src="https://archive.org/download/IllinoisClique/Tab_6.png" class="tab6"></a> 
+    </div>
+    <div class="right_space">
+      
+      <div class="linkbox">
+        <font color="white" size="5">Frequently Asked Questions:</font><br><br>
+        <font color="white" size="2">
+          -<a href="#Q1">How do I win meet and greet tickets?</a><br>
+          -<a href="#Q2">Where can I buy tickets from?</a><br>
+          -<a href="#Q3">When is the best time to buy tickets?</a><br>
+          -<a href="#Q4">Question</a><br>
+          -<a href="#Q5">Question</a><br>
+        </font>
+      </div>
+     
+     <div class="box">
+       <font color="white" size="6"><a name="Q1">How do I win meet and greet tickets?</a></font><br>
+      <font color="grey" size="3">Tune in to and follow 101.1 WKQX and 103.5 KISS FM when the concert comes closer! They usually give away tickets for Chicago shows. We'll also be informing you when they're doing giveaways on our twitter page and website!</font>
+     </div>
+      
+      <div class="box">
+        <font color="white" size="6"><a name="Q2">Where can I buy tickets from?</a></font><br>
+      <font color="grey" size="3">Tickets for both the Chicago and Moline shows in January are sold out. But you can buy tickets from people reselling them on websites such as <a href="https://www.stubhub.com/find/s/?q=twenty%20one%20pilots">StubHub</a>, <a href="https://seatgeek.com/twenty-one-pilots-tickets?oq=twenty+one+pilots">SeatGeek</a>, and <a href="http://www.vividseats.com/concerts/twenty-one-pilots-tickets.html">VividSeats</a>.</font>
+     </div>
+      
+      <div class="box">
+        <font color="white" size="6"><a name="Q3">When is the best time to buy tickets?</a></font><br>
+      <font color="grey" size="3">The Holidays are coming up and many people are wanting tickets from resale sites. If you aren't worried about money and want good tickets, it's recommended you consider buying tickets very soon. If you are more worried about money and dont care what seats you get, wait until after the Holidays, when the prices of tickets drop.</font>
+     </div>
+      
+      <div class="box">
+        <font color="white" size="6"><a name="Q4">Title</a></font><br>
+      <font color="grey" size="3">Answer</font>
+     </div>
+      
+      <div class="box">
+        <font color="white" size="6"><a name="Q5">Title</a></font><br>
+      <font color="grey" size="3">Answer</font>
+     </div>
+      
+    <div class="right_front">
+      
+      </div></div>
+    <div class="footer">
+        <p>Copyright © 2016 Illinois Clique</p>
+ </div>      
+ <script>// Write JavaScript here </script></div></div></body>
