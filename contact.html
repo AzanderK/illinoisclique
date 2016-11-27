@@ -170,6 +170,50 @@ $(window).scroll(function() {
   margin-bottom: 30px;
   margin-top: 0;
 }
+input[type=text], select {
+    width: 50%;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 50%;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type=submit] {
+    width: 25%;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    background-color: #de3b21;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+textarea{
+    width: 50%;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button[type=submit]:hover {
+    background-color: #de4b21;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -200,11 +244,13 @@ body {
     <div class="right_space">
       
       <div class="contact">
-      <font size="5" color="white">Ask Us</font><br/> 
-<form method="POST" action="http://formspree.io/illinoisclique@gmail.com"> 
-  <input type="email" name="email" placeholder="Your email" width="100px"><br>
-  <textarea name="message" placeholder="Your question" rows="10" cols="65"></textarea><br>
-  <button type="submit">Send</button>
+      <font size="5" color="white">Ask Us</font><br/>
+      <font size="1" color="white">*Information will stay anonymous*</font><br>
+<form method="POST" action="http://formspree.io/illinoisclique@gmail.com">
+  <input type="text" name="name" placeholder="First Name*"><br>
+  <input type="email" name="email" placeholder="Email*"><br>
+  <textarea name="message" placeholder="Question" rows="5"></textarea><br>
+  <button type="submit">Submit</button>
 </form>
       </div>
       
@@ -214,4 +260,4 @@ body {
     <div class="footer">
         <p>Copyright © 2016 Illinois Clique</p>
  </div>      
-</body> 
+</body>
