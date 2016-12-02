@@ -20,12 +20,12 @@ $(window).scroll(function() {
 </script>
 
 <script>
-$document.ready(function(){
-
 setTimeout(function(){
-$('body').addClass('loaded');
-
+  $('body').addClass('loaded');
+  $('h1').css('color', '#222');
+}, 3000);
 </script>
+
 <html>
 <head>
     <title>Illinois Clique | Home</title>
@@ -357,7 +357,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background-color: #de3b21;
+    background-color: transparent;
   }
   #loader{
     display: block;
@@ -450,6 +450,13 @@ body {
        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
   }
   .loaded #loader{
+    opacity: 0;
+    
+      -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    
+  }
+.loaded #logo{
     opacity: 0;
     
       -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
