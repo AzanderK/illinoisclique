@@ -198,26 +198,43 @@ body {
 .fundtext {
   position: relative;
   text-align: left;
-  max width: 80%;
+  max width: 75%;
   width: 80%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 5px;
 }
-.fundbutton {
+.mt10{margin-top: 10px !important;}
+
+#widget-preview iframe {
+    position: relative;
+    left: -8px;
+}
+.badge-widget {
   position: absolute;
   right: 0;
   top: 0;
-  width: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 5px
+    background-repeat: no-repeat;
+    color: #fff !important;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 31px;
+    letter-spacing: -.5px;
+    padding-top: 95px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    text-decoration: none !important;
+    width: 198px;
 }
 
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 .form {
     width: 500px;
     margin: 100px auto;
@@ -381,7 +398,7 @@ body {
   position: absolute;
   background: black;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: left;
+  text-align: center;
   line-height: 1;
   letter-spacing: 3px;
   border-bottom: 5px solid #de3b21;
@@ -392,21 +409,16 @@ body {
 }
 .fundtext {
   position: relative;
-  text-align: left;
-  max width: 80%;
-  width: 75%;
+  text-align: center;
+  max width: 100%;
+  width: 95%;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
+  margin-right: 20px;
 }
-.fundbutton {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px
+.badge-widget {
+  margin-top: -1000px;
 }
 }
 
@@ -422,10 +434,14 @@ body {
      <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">
 
 <div class="fund">
-<div class="fundbutton"><a href=https://www.gofundme.com/helpillinoisclique><img src="https://funds.gofundme.com/css/3.0_donate/red/widget.png"><br><font size="2" color="white">Click to Donate Now!</font></a>
-</div>
+
 <div class="fundtext">
 <font color="white" size="1"><b>Dear Illinois Clique Supporters:</b><br>Thank you for supporting us. We are a non-profit community needing support for our website. Our mission is to help you gain knowledge, entertainment, and a sense of comfort within the Illinois Clique. For free. Together we are building a special place where you can read, learn, and stay updated on twenty one pilots, locally. Reader privacy is important, so we don’t collect your personal information. We don’t support ads. But we still need to pay for our servers. That’s where you can help us. If everyone reading this donated $5, we could reach our goal by Christmas. If you find our site useful, please give what you can today. Thank you. Stay Alive |-/<br></font><font size="2" color="White"><br><b>www.gofundme.com/HelpIllinoisClique</b></font></div>
+
+<div id="widget-preview" class="mt10" style="min-height:0px; max-height: 327px;">
+<a target="_blank" class="badge-widget" style="border: medium none; background-image: url(&quot;https://funds.gofundme.com/css/3.0_donate/red/widget.png&quot;); visibility: visible;" href="//www.gofundme.com/HelpIllinoisClique?utm_medium=wdgt" title="Visit this page now.">Click to Donate Now!</a>
+</div>
+
 </div>
  
     <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
