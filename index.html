@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<html>
+
+<div id="quotebox"><div id="quote"></div></div>
+<script>var quotes=new Array();
+quotes[0] = "''Think. Create. Stay Alive''<br>- Tyler Joseph";
+quotes[1] = "''Blurryface is a fictional character and a reference to insecurities, which I think all people have.''<br>- Josh Dun";
+quotes[2] = "''If we can get through to one person, just one person, our entire careers are validated right then and there.''<br>- Tyler Joseph";
+quotes[3] = "''...and I don't think either of us have had a hard time saying, 'This is who I am, and I'm fine with it.''<br>- Josh Dun";
+quotes[4] = "''Don't let the fear of unhappiness cripple your pursuit of finding what you believe.''<br>- Tyler Joseph";
+
+var q = quotes.length;
+var whichquote=Math.round(Math.random()*(q-1));
+
+function showquote(){
+    document.getElementById('quote').innerHTML = quotes[whichquote];}
+showquote();
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
 $(window).scroll(function() {
@@ -23,10 +41,9 @@ $(window).scroll(function() {
 setTimeout(function(){
   $('body').addClass('loaded');
   $('h1').css('color', '#222');
-}, 3000);
+}, 6500);
 </script>
 
-<html>
 <head>
     <title>Illinois Clique | Home</title>
     <link rel="icon" href="https://archive.org/download/IllinoisClique/LogoTransparent.png">
@@ -335,9 +352,36 @@ body {
 }
 
 
+
 /* Loader */
 
 
+
+  #quotebox{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-transform: uppercase;
+    z-index: 2005;
+    height: 25%;
+    width: 100%;
+    background: transparent;
+  }  
+  #quote{
+    display: block;
+    position: relative;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-transform: uppercase;
+    width: 80%;
+    left: 50%;
+    top: 30%;
+    margin: 0px 0 0 -40%;
+  }  
   #logo{
     align: center;
     display: block;
@@ -457,6 +501,13 @@ body {
     
   }
 .loaded #logo{
+    opacity: 0;
+    
+      -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    
+  }
+.loaded #quotebox{
     opacity: 0;
     
       -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
