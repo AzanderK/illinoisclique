@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+    t = $('.form').offset();
+    t = t.top;
+    
+    s = $(window).scrollTop();
+    
+    d = t-s;
+    
+    if (d < 0) {
+        $('.banner').addClass('fixed');
+        $('.form').addClass('paddingTop');
+    } else {
+        $('.banner').removeClass('fixed');
+        $('.form').removeClass('paddingTop');
+    }
+});
+</script>
+
+<script>
+setTimeout(function(){
+  $('body').addClass('loaded');
+  $('h1').css('color', '#222');
+}, 3000);
+</script>
+
+<html>
+<head>
+    <title>Illinois Clique | Home</title>
+    <link rel="icon" href="https://archive.org/download/IllinoisClique/LogoTransparent.png">
+    <style>
+.form {
+    width:500px;
+    margin: 100px auto;
+    border:1px solid #000;
+    padding:10px;
+}
+.banner {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    background:transparent;
+    height:auto;
+    width:auto;
+}
+.fixed{
+    position:fixed;
+    top: 40px;
+    left: 50px
+}
+.paddingTop{
+    padding-top:110px;
+}
+.header_img{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+}
+.header_cap{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+    border-bottom: 12px solid #de3b21;
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.title{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 275px;
+    height: auto;
+    background: transparent;
+}
+.overlay_image{
+    position: fixed;
+    top: 160px;
+    left: 40px;
+    width: 200px;
+    height: auto;
+    background: transparent;
+}
+.right_space{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+    width: 75%;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background: transparent;
+    margin-left: 275px;
+}
+.right_front{
+    position:absolute;
+    text-align: center;
+    top: 21%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background: transparent;
+    margin-left:auto;
+}
+.tab{
+  position: absolute;
+  height: 24%;
+  left: 3.2%;
+  margin-left:25%;
+  bottom: 0;
+}
+.tab2{
+  position: absolute;
+  height: 24%;
+  left: 13%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab3{
+  position: absolute;
+  height: 24%;
+  left: 24.2%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab4{
+  position: absolute;
+  height: 24%;
+  left: 35.2%;
+  margin-left: 25%;
+  bottom: 0; 
+}
+.tab5{
+  position: absolute;
+  height: 24%;
+  left: 48.9%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.tab6{
+  position: absolute;
+  height: 24%;
+  left: 55.1%;
+  margin-left: 25%;
+  bottom: 0;
+}
+.footer{
+  position: absolute;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left:auto;
+  left: 0;
+  bottom: auto;
+  border-top: 5px solid #de3b21;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { 
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+.form {
+    width:500px;
+    margin: 100px auto;
+    border:1px solid #000;
+    padding:10px;
+}
+.banner {
+    top: -1000px;
+    left: 0px;
+    position: absolute;
+    background:transparent;
+    height: 1px;
+    width: 1px;
+}
+.fixed{
+    position:fixed;
+    top: -1000px;
+    left: 0px
+}
+.paddingTop{
+    padding-top:110px;
+}
+.header_img{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+}
+.header_cap{
+    position:relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+    background: transparent;
+    border-bottom: 12px solid #de3b21;
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+.title{
+    position: absolute;
+    top: 15px;
+    left: 38%;
+    width: 25%;
+    height: auto;
+    background: transparent;
+}
+.right_space{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background: transparent;
+    margin-left: 0;
+}
+.right_front{
+    position:absolute;
+    text-align: center;
+    top: 21%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background: transparent;
+    margin-left:auto;
+}
+.tab{
+  position: absolute;
+  height: 30%;
+  left: 1%;
+  margin-left: 7%;
+  bottom: 0;
+}
+.tab2{
+  position: absolute;
+  height: 30%;
+  left: 13.6%;
+  margin-left: 7%;
+  bottom: 0;
+}
+.tab3{
+  position: absolute;
+  height: 30%;
+  left: 28.1%;
+  margin-left: 7%;
+  bottom: 0;
+}
+.tab4{
+  position: absolute;
+  height: 30%;
+  left: 42.4%;
+  margin-left: 7%;
+  bottom: 0; 
+}
+.tab5{
+  position: absolute;
+  height: 30%;
+  left: 59.9%;
+  margin-left: 7%;
+  bottom: 0;
+}
+.tab6{
+  position: absolute;
+  height: 30%;
+  left: 68%;
+  margin-left: 7%;
+  bottom: 0;
+}
+.footer{
+  position: absolute;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-left:auto;
+  left: 0;
+  bottom: auto;
+  border-top: 5px solid #de3b21;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { 
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+}
+
+
+/* Loader */
+
+
+  #logo{
+    align: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 150px;
+    margin: -164px 0 0 -139px;
+    border: 3px solid transparent;
+    z-index: 1001;
+  }
+  #loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: transparent;
+  }
+  #loader{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left-color: white;
+    border-right-color: white;
+    
+    -webkit-animation: spin 2s ease infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s ease infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 1002;
+  }
+  #loader:before{
+    content:"";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    border-bottom-color: white;
+    
+    -webkit-animation: spin 2s ease infinite; /* Chrome, Opera 15+, Safari 5+ */
+          animation: spin 2s ease infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+  
+  @-webkit-keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0%   {
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+  
+  #loader-wrapper .loader-section{
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222;
+    z-index: 1000;
+  }
+  #loader-wrapper .loader-section.section-left{
+    left: 0;
+  }
+  #loader-wrapper .loader-section.section-right{
+    right: 0;
+  }
+  
+  /* Loaded styles */
+  .loaded #loader-wrapper .loader-section.section-left{
+      -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(-100%);  /* IE 9 */
+      transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+      
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  }
+  .loaded #loader-wrapper .loader-section.section-right{
+      -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(100%);  /* IE 9 */
+      transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+      
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  }
+  .loaded #loader{
+    opacity: 0;
+    
+      -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    
+  }
+.loaded #logo{
+    opacity: 0;
+    
+      -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+    
+  }
+  .loaded #loader-wrapper{
+    visibility: hidden;
+    
+      -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateY(-100%);  /* IE 9 */
+      transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+      -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  }
+
+
+    </style>
+</head>
+
+
+<body bgcolor="#000000" link="#de3b21" vlink="#ffffff" alink="#ffffff" ondragstart="returnfalse" onselectstart="return false">
+
+<div id="loader-wrapper">
+  <div id="logo"><img src="https://archive.org/download/IllinoisClique/IllinoisCliqueLoad.png" width="250px"></div>
+  <div id="loader"></div>
+  
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+</div>
+
+  <div class=form>
+  <div class="header"> <div class="header_cap">
+     <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
+     <div class=banner><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
+ 
+    <a href="index.html"><img src="https://archive.org/download/IllinoisClique/OpenTab_1.png" class="tab"></a>
+    <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
+    <a href="photos.html"><img src="https://archive.org/download/IllinoisClique/Tab_3.png" class="tab3"></a>
+    <a href="calendar.html"><img src="https://archive.org/download/IllinoisClique/Tab_4.png" class="tab4"></a>
+    <a href="faq.html"><img src="https://archive.org/download/IllinoisClique/Tab_5.png" class="tab5"></a>
+    <a href="contact.html"><img src="https://archive.org/download/IllinoisClique/Tab_6.png" class="tab6"></a> 
+    </div>
+    <div class="right_space">
+      <font size="8" color="white">illinois Roadshow</font><br/>
+      <table align="center" width="420px" bgcolor="black"><tr>
+    <th text-align="right" width="150"><font color="white">Days</font></th>
+    <th text-align="right" width="110"><font color="white">Hours</font></th>
+    <th text-align="left" width="160"><font color="white">Mins</font></th>
+  </tr></table>
+      <font color=#000000>_</font> 
+      <iframe src="http://free.timeanddate.com/countdown/i5e3y1yj/n605/cf11/cm0/cu3/ct1/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pc000/tcfff/fs325/szw448/szh189/iso2017-01-28T19:00:00"  
+      frameborder="0" 
+      width="375" 
+      height="89">
+        </iframe><br>
+
+      <img src="https://archive.org/download/IllinoisClique/Tweet_Background2.png">
+    <div class="right_front">
+      <a class="twitter-timeline" data-lang="en" data-height="750" data-width="750" data-theme="dark" data-link-color="#de3b21" href="https://twitter.com/IllinoisClique">Tweets by IllinoisClique</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div></div>
+    <div class="footer">
+        <p>Copyright © 2016 Illinois Clique<br>
+        <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
+  </div>
+      
+</body>
+</html>
