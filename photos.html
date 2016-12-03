@@ -189,8 +189,31 @@ body {
     letter-spacing: 5px;
     word-spacing: 3px;
 }
+#img{
+  position: relative;
+  right: 0px;
+  display: inline-block;
+}
+#text{
+  position: absolute;
+  font-size: 13px;
+  width: 90%; 
+  height: auto; 
+  bottom: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: #de3b21; 
+  opacity: 0;
+}
+#img:hover #text{
+  opacity: 0.8;
+  text-align: justify;
+  color: #ffffff;
+
+}
 
 
+/*   Mobile   */
 
 
 @media only screen and (max-width: 1000px) {
@@ -453,7 +476,7 @@ body {
     right: 0;
   }
   
-  /* Loaded styles */
+  /*   Loaded styles   */
   .loaded #loader-wrapper .loader-section.section-left{
       -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
       -ms-transform: translateX(-100%);  /* IE 9 */
@@ -529,11 +552,17 @@ body {
       <br><br><font color="white" size="5">Fan Art</font><br>
       <font color="white" size="3">From the Illinois Clique</font><br><br>
 
-      <a href="https://twitter.com/sjbadwolf_/status/804118897041477634"><img src="https://pbs.twimg.com/media/CyjN32JXAAAMKkj.jpg" style="border:3px solid #de3b21" width="44%"></a>
+      <a href="https://twitter.com/sjbadwolf_/status/804118897041477634"><div id="img" style="max-width:44%">
+<div id="text"><p>.:shaking hands with the dark parts of my thoughts:.</p><p>By: Shelby</p></div>
+<img src="https://pbs.twimg.com/media/CyjN32JXAAAMKkj.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
 
-      <a href="https://twitter.com/kailawtvr/status/800837684365299715"><img src="https://pbs.twimg.com/media/Cx0ln2OVIAAuUey.jpg" style="border:3px solid #de3b21" width="45%"></a>
+      <a href="https://twitter.com/kailawtvr/status/800837684365299715"><div id="img" style="max-width:45%">
+<div id="text"><p>@twentyonepilots sounds great, but the hoods?! No thanks.<br>Clique art in honor of the ama's</p><p>By: Kaila Henkin</p></div>
+<img src="https://pbs.twimg.com/media/Cx0ln2OVIAAuUey.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
 
-      <a href="https://twitter.com/ksnickss/status/803725455803162624"><img src="https://archive.org/download/IllinoisClique/Imgfanart-Katie.png" style="border:3px solid #de3b21" width="46%"></a>
+      <a href="https://twitter.com/ksnickss/status/803725455803162624"><div id="img" style="max-width:46%">
+<div id="text"><p>emøtiønal røadshøw</p><p>By: Katie Sanicki</p></div>
+<img src="https://archive.org/download/IllinoisClique/Imgfanart-Katie.png" style="border:3px solid #de3b21" width="99%"></div></a>
 
       <a href="https://twitter.com/emily_simpsonnn/status/799059760310009856"><img src="https://pbs.twimg.com/media/CxbUk5RVEAADbfm.jpg" style="border:3px solid #de3b21" width="43%"></a>
       
@@ -590,9 +619,7 @@ body {
       <a href="https://twitter.com/flyingcookies"><img src="https://archive.org/download/IllinoisClique/December3-Jenifer1.png" style="border:3px solid #de3b21" width="45%"></a>
 </div>
       
-    <div class="right_front">
-      
-      </div></div>
+      </div>
 <div class="footer">
         <p>Copyright © 2016 Illinois Clique<br>
         <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
