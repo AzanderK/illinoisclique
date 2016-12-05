@@ -41,12 +41,22 @@ $(window).scroll(function() {
 });
 </script>
 
+
+
+
+
 <script>
-setTimeout(function(){
+
+window.addEventListener("load", function() {
+setTimeout(function(time){
   $('body').addClass('loaded');
   $('h1').css('color', '#222');
-}, 6500);
+}, 5000);
+});
+
 </script>
+
+
 
 <head>
     <title>Illinois Clique | Home</title>
