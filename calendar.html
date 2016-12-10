@@ -29,13 +29,9 @@ setTimeout(function(time){
 </script>
 
 <script>
-window.onload = function(){
-    document.getElementById('close').onclick = function(){
-        this.parentNode.parentNode
-        .removeChild(this.parentNode);
-        return false;
-    };
-};
+      function replaceContentInContainer(target,source) {
+        document.getElementById(target).innerHTML  = document.getElementById(source).innerHTML;
+      }
 </script>
 
 
@@ -265,69 +261,26 @@ th{
 font{
 color: white;
 }
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: left;
-  line-height: 1;
-  letter-spacing: 3px;
-  border: 5px solid #de3b21;
-  right: 0;
-  top: 0;
-  width: 75%;
-  max-width: 75%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: left;
-  max width: 75%;
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-.mt10{margin-top: 10px;}
-
-#widget-preview iframe {
-    position: relative;
-    left: -8px;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 8px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
-}
-#close {
+#left{
     position: absolute;
-    right: 0px;
-    bottom: 0px;
-    display:inline-block;
-    padding:2px 5px;
-    background:#de3b21;
+    left: 25%;
+    color: white;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+}
+#right{
+    position: absolute;
+    right: 25%;
+    color: white;
+    display: inline-block;
+    background: transparent;
     cursor: pointer;
 }
 
 
 
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
 .form {
     width: 500px;
     margin: 100px auto;
@@ -401,7 +354,7 @@ color: white;
     top: 0;
     left: 0;
     height: auto;
-    padding-top: 25%;
+    padding-top: 5%;
     padding-bottom: 20px;
     background: transparent;
     margin-left: 0;
@@ -536,52 +489,6 @@ th{
 }
 font{
 color: white;
-}
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: center;
-  line-height: 1;
-  letter-spacing: 3px;
-  border-bottom: 5px solid #de3b21;
-  top: 100%;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: center;
-  max width: 100%;
-  width: 95%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-#close{
-  visibility: hidden;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 0px;
-  margin-right: 2px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
 }
 }
 
@@ -741,13 +648,7 @@ color: white;
   <div class="header"> <div class="header_cap">
      <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
      <div class=banner><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
-     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">
-
-<div class="fund">
-<div class="fundtext">
-<font color="white" size="1"><b>Dear Illinois Clique Supporters:</b><br>Thank you for supporting us. We are a non-profit in need of support for our website. Our mission is to help you gain knowledge, entertainment, and a sense of comfort within the Illinois Clique. For free. Together we are building a special place where you can read, learn, and stay updated on twenty one pilots, locally. Reader privacy is important, so we don’t collect your personal information. We don’t support ads. But we still need to pay for our servers. That’s where you can help us. If everyone reading this donated $5, we could reach our goal by the end of December. If you find our site useful, please give what you can today. Thank you. Stay Alive |-/<br></font><font size="2" color="White"><br><b>www.GoFundMe.com/HelpIllinoisClique</b></font></div>
-        <span id='close'><font size="2">close</font></span>
-</div>
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
  
     <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
     <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
@@ -757,7 +658,140 @@ color: white;
     <a href="contact.html"><img src="https://archive.org/download/IllinoisClique/Tab_6.png" class="tab6"></a> 
     </div>
     <div class="right_space">
-      <font size="7" color="white">December</font><br/>
+
+<div id="month">
+     <div id="left" onClick="replaceContentInContainer('month', 'month1')"><font size="6" color="white">←</font></div>
+     <font size="7" color="white">December</font>
+     <div id="right" onClick="replaceContentInContainer('month', 'month3')"><font size="6" color="white">→</font></div><br>
+<table align="center">
+
+<tr>
+<th style="border: 2px solid #de3b21"><font size="2">Sun</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Mon</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Tue</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Wed</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Thu</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Fri</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Sat</font><br><font size="1"></font></th>
+
+</tr>
+<tr>
+<th style="border: 2px solid red" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">1</font><br><font size="1">Tyler Joseph's Birthday</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">2</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">3</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">4</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">5</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">6</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">7</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">8</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">9</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">10</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">11</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">12</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">13</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">14</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">15</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">16</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">17</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">18</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">19</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">20</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">21</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">22</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">23</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">24</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">25</font><br><font size="1">Christmas</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">26</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">27</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">28</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">29</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">30</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">31</font><br><font size="1"></font></th>
+</tr>
+
+</table>
+</div>
+
+<div id="month1" style="display:none">
+      <font size="7" color="white">November</font>
+      <div id="right" onClick="replaceContentInContainer('month', 'month2')"><font size="6" color="white">→</font></div><br>
+<table align="center">
+
+<tr>
+<th style="border: 2px solid #de3b21"><font size="2">Sun</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Mon</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Tue</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Wed</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Thu</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Fri</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Sat</font><br><font size="1"></font></th>
+
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">1</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">2</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">3</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">4</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">5</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">6</font><br><font size="1">Daylight Saving Time</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">7</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">8</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">9</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">10</font><br><font size="1"></font></th>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">11</font><br><font size="1">Veterans Day</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">12</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">13</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">14</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">15</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">16</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">17</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">18</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">19</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">20</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">21</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">22</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">23</font><br><font size="1"></font></th>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">24</font><br><font size="1">Thanks Giving</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">25</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">26</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">27</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">28</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">29</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">30</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+</tr>
+
+</table>
+</div>
+
+<div id="month2" style="display:none">
+     <div id="left" onClick="replaceContentInContainer('month', 'month1')"><font size="6" color="white">←</font></div>
+     <font size="7" color="white">December</font>
+     <div id="right" onClick="replaceContentInContainer('month', 'month3')"><font size="6" color="white">→</font></div><br>
 <table align="center">
 
 <tr>
@@ -817,14 +851,80 @@ color: white;
 </tr>
 
 </table>
+</div>
 
-      
+<div id="month3" style="display:none">
+     <div id="left" onClick="replaceContentInContainer('month', 'month2')"><font size="6" color="white">←</font></div>
+     <font size="7" color="white">January</font>
+<table align="center">
+
+<tr>
+<th style="border: 2px solid #de3b21"><font size="2">Sun</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Mon</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Tue</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Wed</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Thu</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Fri</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21"><font size="2">Sat</font><br><font size="1"></font></th>
+
+</tr>
+<tr>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">1</font><br><font size="1">New Year's Day</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">2</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">3</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">4</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">5</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">6</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">7</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">8</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">9</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">10</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">11</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">12</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">13</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">14</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">15</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">16</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">17</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">18</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">19</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">20</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">21</font><br><font size="1"></font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">22</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">23</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">24</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">25</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">26</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">27</font><br><font size="1"></font></th>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">28</font><br><font size="1">Chicago Roadshow</font></th>
+</tr>
+<tr>
+<th style="border: 2px solid #ffffff" height="125"><font size="5">29</font><br><font size="1">Moline Roadshow</font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">30</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5">31</font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+<th style="border: 2px solid #de3b21" height="125"><font size="5"></font><br><font size="1"></font></th>
+</tr>
+
+</table>
+</div>
+
+
+
+ 
       </div>
     <div class="footer">
         <p>Copyright © 2016 Illinois Clique<br>
         <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
   </div>
-<div id="widget-preview" class="mt10" style="min-height:0px; max-height: 327px;">
-<a target="_blank" class="badge-widget" style="border: medium none; background-image: url(&quot;https://funds.gofundme.com/css/3.0_donate/red/widget.png&quot;); visibility: visible;" href="//www.gofundme.com/HelpIllinoisClique?utm_medium=wdgt" title="Visit this page now.">Click to Donate Now!</a></div>
+      
 </body>
       </html>
