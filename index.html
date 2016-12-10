@@ -52,14 +52,18 @@ setTimeout(function(time){
 
 <script>
 window.onload = function(){
-    document.getElementById('close').onclick = function(){
-        this.parentNode.parentNode
-        .removeChild(this.parentNode);
-        return false;
-    };
+    document.getElementById('close1').onclick = function(){
+document.getElementById('right_space').classList.add('close2');
+document.getElementById('right_space').classList.remove('close1');
+};
 };
 </script>
 
+<script>
+      function replaceContentInContainer(target,source) {
+        document.getElementById(target).innerHTML  = document.getElementById(source).outerHTML;
+      }
+</script>
 
 
 <head>
@@ -272,70 +276,30 @@ body {
     letter-spacing: 5px;
     word-spacing: 3px;
 }
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: left;
-  line-height: 1;
-  letter-spacing: 3px;
-  border: 5px solid #de3b21;
-  right: 0;
-  top: 0;
-  width: 75%;
-  max-width: 75%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: left;
-  max width: 75%;
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-.mt10{margin-top: 10px;}
-
-#widget-preview iframe {
+#close1 {
     position: relative;
-    left: -8px;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 8px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
-}
-#close {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    display:inline-block;
+    color: white;
+    display: inline-block;
+    align: center;
+    width: 100%;
     padding:2px 5px;
-    background:#de3b21;
+    background:transparent;
+    cursor: pointer;
+}
+#close2 {
+    position: relative;
+    color: white;
+    display: inline-block;
+    align: center;
+    width: 100%;
+    padding:2px 5px;
+    background:transparent;
     cursor: pointer;
 }
 
 
 
-
-
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
 .form {
     width:500px;
     margin: 100px auto;
@@ -401,7 +365,7 @@ body {
     top: 0;
     left: 0;
     height: auto;
-    padding-top: 25%;
+    padding-top: 5%;
     padding-bottom: 20px;
     background: transparent;
     margin-left: 0;
@@ -413,7 +377,7 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    padding-top: 20%;
+    padding-top: 5%;
     background: transparent;
     margin-left:auto;
 }
@@ -519,55 +483,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-body {
+body { 
     letter-spacing: 5px;
     word-spacing: 3px;
-}
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: center;
-  line-height: 1;
-  letter-spacing: 3px;
-  border-bottom: 5px solid #de3b21;
-  top: 100%;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: center;
-  max width: 100%;
-  width: 95%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-#close{
-  visibility: hidden;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 0px;
-  margin-right: 2px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
 }
 }
 
@@ -773,13 +691,7 @@ body {
   <div class="header"> <div class="header_cap">
      <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
      <div class=banner><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
-     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">
-
-<div class="fund">
-<div class="fundtext">
-<font color="white" size="1"><b>Dear Illinois Clique Supporters:</b><br>Thank you for supporting us. We are a non-profit in need of support for our website. Our mission is to help you gain knowledge, entertainment, and a sense of comfort within the Illinois Clique. For free. Together we are building a special place where you can read, learn, and stay updated on twenty one pilots, locally. Reader privacy is important, so we don’t collect your personal information. We don’t support ads. But we still need to pay for our servers. That’s where you can help us. If everyone reading this donated $5, we could reach our goal by the end of December. If you find our site useful, please give what you can today. Thank you. Stay Alive |-/<br></font><font size="2" color="White"><br><b>www.GoFundMe.com/HelpIllinoisClique</b></font></div>
-        <span id='close'><font size="2">close</font></span>
-</div>
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
  
     <a href="index.html"><img src="https://archive.org/download/IllinoisClique/OpenTab_1.png" class="tab"></a>
     <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
@@ -789,7 +701,9 @@ body {
     <a href="contact.html"><img src="https://archive.org/download/IllinoisClique/Tab_6.png" class="tab6"></a> 
     </div>
     <div class="right_space">
-      <font size="8" color="white">illinois Roadshow</font><br/>
+
+<div id="close1">
+<span id="close1i" onClick="replaceContentInContainer('close1', 'close2i')"><font size="8" color="white">Chicago Roadshow</font><br/>
       <table align="center" width="420px" bgcolor="black"><tr>
     <th text-align="right" width="150"><font color="white">Days</font></th>
     <th text-align="right" width="110"><font color="white">Hours</font></th>
@@ -800,6 +714,38 @@ body {
       width="375" 
       height="89">
         </iframe><br>
+</span>
+</div>
+
+<div id="close2" style="display:none">
+<span id="close2i" onClick="replaceContentInContainer('close1', 'close3i')"><font size="8" color="white">Moline Roadshow</font><br/>
+      <table align="center" width="420px" bgcolor="black"><tr>
+    <th text-align="right" width="150"><font color="white">Days</font></th>
+    <th text-align="right" width="110"><font color="white">Hours</font></th>
+    <th text-align="left" width="160"><font color="white">Mins</font></th>
+  </tr></table>
+      <iframe src="https://free.timeanddate.com/countdown/i5e3y1yj/n605/cf11/cm0/cu3/ct1/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pc000/tcfff/fs325/szw448/szh189/iso2017-01-29T19:00:00"  
+      frameborder="0" 
+      width="375" 
+      height="89">
+        </iframe><br>
+</span>
+</div>
+
+<div id="close3" style="display:none">
+<span id="close3i" onClick="replaceContentInContainer('close1', 'close2i')"><font size="8" color="white">Chicago Roadshow</font><br/>
+      <table align="center" width="420px" bgcolor="black"><tr>
+    <th text-align="right" width="150"><font color="white">Days</font></th>
+    <th text-align="right" width="110"><font color="white">Hours</font></th>
+    <th text-align="left" width="160"><font color="white">Mins</font></th>
+  </tr></table>
+      <iframe src="https://free.timeanddate.com/countdown/i5e3y1yj/n605/cf11/cm0/cu3/ct1/cs1/ca0/co0/cr0/ss0/cacfff/cpcfff/pc000/tcfff/fs325/szw448/szh189/iso2017-01-28T19:00:00"  
+      frameborder="0" 
+      width="375" 
+      height="89">
+        </iframe><br>
+</span>
+</div>
 
       <img src="https://archive.org/download/IllinoisClique/Tweet_Background2.png">
     <div class="right_front">
@@ -810,8 +756,7 @@ body {
         <p>Copyright © 2016 Illinois Clique<br>
         <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
       </div></div></div>
-<div id="widget-preview" class="mt10" style="min-height:0px; max-height: 327px;">
-<a target="_blank" class="badge-widget" style="border: medium none; background-image: url(&quot;https://funds.gofundme.com/css/3.0_donate/red/widget.png&quot;); visibility: visible;" href="//www.gofundme.com/HelpIllinoisClique?utm_medium=wdgt" title="Visit this page now.">Click to Donate Now!</a></div>
+      
 </body>
 </html>
 /*
