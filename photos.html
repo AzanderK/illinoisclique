@@ -28,16 +28,6 @@ setTimeout(function(time){
 });
 </script>
 
-<script>
-window.onload = function(){
-    document.getElementById('close').onclick = function(){
-        this.parentNode.parentNode
-        .removeChild(this.parentNode);
-        return false;
-    };
-};
-</script>
-
 
 
 <html>
@@ -280,74 +270,16 @@ body {
       -webkit-transform: translateY(-5px);  /* Chrome, Opera 15+, Safari 3.1+ */
       -ms-transform: translateY(-5px);  /* IE 9 */
       transform: translateY(-5px);  /* Firefox 16+, IE 10+, Opera */
-      -webkit-transition: all 0.2s .25s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
-       transition: all 0.2s .25s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+      -webkit-transition: all 0.2s .1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+       transition: all 0.2s .1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 
-}
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: left;
-  line-height: 1;
-  letter-spacing: 3px;
-  border: 5px solid #de3b21;
-  right: 0;
-  top: 0;
-  width: 75%;
-  max-width: 75%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: left;
-  max width: 75%;
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-}
-.mt10{margin-top: 10px;}
-
-#widget-preview iframe {
-    position: relative;
-    left: -8px;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 8px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
-}
-#close {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    display:inline-block;
-    padding:2px 5px;
-    background:#de3b21;
-    cursor: pointer;
 }
 
 
 /*   Mobile   */
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1000px) {
 .form {
     width: 500px;
     margin: 100px auto;
@@ -421,7 +353,7 @@ body {
     top: 0;
     left: 0;
     height: auto;
-    padding-top: 20%;
+    padding-top: 1%;
     padding-bottom: 20px;
     background: transparent;
     margin-left: 0;
@@ -444,21 +376,7 @@ body {
   margin-left: 7%;
   bottom: 0;
 }
-.tab:hover{
-  position: absolute;
-  height: 30%;
-  left: 1%;
-  margin-left: 7%;
-  bottom: 0;
-}
 .tab2{
-  position: absolute;
-  height: 30%;
-  left: 13.6%;
-  margin-left: 7%;
-  bottom: 0;
-}
-.tab2:hover{
   position: absolute;
   height: 30%;
   left: 13.6%;
@@ -472,21 +390,7 @@ body {
   margin-left: 7%;
   bottom: 0;
 }
-.tab3:hover{
-  position: absolute;
-  height: 30%;
-  left: 28.1%;
-  margin-left: 7%;
-  bottom: 0;
-}
 .tab4{
-  position: absolute;
-  height: 30%;
-  left: 42.4%;
-  margin-left: 7%;
-  bottom: 0; 
-}
-.tab4:hover{
   position: absolute;
   height: 30%;
   left: 42.4%;
@@ -500,21 +404,7 @@ body {
   margin-left: 7%;
   bottom: 0;
 }
-.tab5:hover{
-  position: absolute;
-  height: 30%;
-  left: 59.9%;
-  margin-left: 7%;
-  bottom: 0;
-}
 .tab6{
-  position: absolute;
-  height: 30%;
-  left: 68%;
-  margin-left: 7%;
-  bottom: 0;
-}
-.tab6:hover{
   position: absolute;
   height: 30%;
   left: 68%;
@@ -548,52 +438,6 @@ html, body {
 body { 
     letter-spacing: 5px;
     word-spacing: 3px;
-}
-.fund {
-  position: absolute;
-  background: black;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  text-align: center;
-  line-height: 1;
-  letter-spacing: 3px;
-  border-bottom: 5px solid #de3b21;
-  top: 100%;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.fundtext {
-  position: relative;
-  text-align: center;
-  max width: 100%;
-  width: 95%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-#close{
-  visibility: hidden;
-}
-.badge-widget {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 0px;
-  margin-right: 2px;
-    background-repeat: no-repeat;
-    color: #ffffff;
-    display: block;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    height: 31px;
-    letter-spacing: -.5px;
-    padding-top: 95px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    text-decoration: none !important;
-    width: 198px;
 }
 }
 
@@ -755,13 +599,7 @@ body {
   <div class="header"> <div class="header_cap">
      <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
      <div class="banner"><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
-     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">
-
-<div class="fund">
-<div class="fundtext">
-<font color="white" size="1"><b>Dear Illinois Clique Supporters:</b><br>Thank you for supporting us. We are a non-profit in need of support for our website. Our mission is to help you gain knowledge, entertainment, and a sense of comfort within the Illinois Clique. For free. Together we are building a special place where you can read, learn, and stay updated on twenty one pilots, locally. Reader privacy is important, so we don’t collect your personal information. We don’t support ads. But we still need to pay for our servers. That’s where you can help us. If everyone reading this donated $5, we could reach our goal by the end of December. If you find our site useful, please give what you can today. Thank you. Stay Alive |-/<br></font><font size="2" color="White"><br><b>www.GoFundMe.com/HelpIllinoisClique</b></font></div>
-        <span id='close'><font size="2">close</font></span>
-</div> 
+     <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">    
  
     <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
     <a href="history.html"><img src="https://archive.org/download/IllinoisClique/Tab_2.png" class="tab2"></a>
@@ -777,43 +615,43 @@ body {
       <br><br><font color="white" size="5">Fan Art</font><br>
       <font color="white" size="3">From the Illinois Clique</font><br><br>
 
-      <a href="https://twitter.com/sjbadwolf_/status/804118897041477634"><div id="img" style="max-width:44%">
+      <a href="https://twitter.com/emily_simpsonnn/status/807450754474803200"><div id="img" style="width: 41%">
+<div id="text"><p>.::.I'm Fairly Løcal::.:</p><p>By: Emily Simpson</p></div>
+<img src="https://pbs.twimg.com/media/CzSkKf6UcAAyEQ3.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="https://twitter.com/digital_curls/status/806985068212326400"><div id="img" style="width: 49%">
+<div id="text"><p>•+▪ Help me polarize ▪+•</p><p>By: Alyssa</p></div>
+<img src="https://pbs.twimg.com/media/CzL8pAeUcAAlIoU.jpg:large" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="https://twitter.com/ksnickss/status/807353126609162240"><div id="img" style="width: 43%">
+<div id="text"><p>☠☠☠</p><p>By: Katie Sanicki</p></div>
+<img src="https://pbs.twimg.com/media/CzRLYh0VQAAGv7K.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="https://twitter.com/fallfarther/status/807339742039777281"><div id="img" style="width: 47%">
+<div id="text"><p>:.:even when i doubt you:.:</p><p>By: Bella</p></div>
+<img src="https://pbs.twimg.com/media/CzQ_LBqXEAA1bCT.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="https://twitter.com/sjbadwolf_/status/804118897041477634"><div id="img" style="width: 44%">
 <div id="text"><p>.:shaking hands with the dark parts of my thoughts:.</p><p>By: Shelby</p></div>
 <img src="https://pbs.twimg.com/media/CyjN32JXAAAMKkj.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
 
-      <a href="https://twitter.com/kailawtvr/status/800837684365299715"><div id="img" style="max-width:45%">
+      <a href="https://twitter.com/kailawtvr/status/800837684365299715"><div id="img" style="width: 46%">
 <div id="text"><p>@twentyonepilots sounds great, but the hoods?! No thanks.<br>Clique art in honor of the ama's</p><p>By: Kaila Henkin</p></div>
 <img src="https://pbs.twimg.com/media/Cx0ln2OVIAAuUey.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
-
-      <a href="https://twitter.com/ksnickss/status/803725455803162624"><div id="img" style="max-width:46%">
-<div id="text"><p>emøtiønal røadshøw</p><p>By: Katie Sanicki</p></div>
-<img src="https://archive.org/download/IllinoisClique/Imgfanart-Katie.png" style="border:3px solid #de3b21" width="99%"></div></a>
-
-      <a href="https://twitter.com/emily_simpsonnn/status/799059760310009856"><div id="img" style="max-width:43%">
-<div id="text"><p>Gøner<br>gon•er;<br>noun,<br>a persøn ør thing that is døømed ør cannøt be saved.</p><p>By: Emily Simpson</p></div>
-<img src="https://pbs.twimg.com/media/CxbUk5RVEAADbfm.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="https://twitter.com/gracepuppy10/status/797214140234395649"><div id="img" style="max-width:45%">
+      <a href="https://twitter.com/gracepuppy10/status/797214140234395649"><div id="img" style="width: 45%">
 <div id="text"><p>dark and scared<br>inspired<br>-/ josh and tyler \-</p><p>By: Samantha Simmons</p></div>
 <img src="https://pbs.twimg.com/media/CxBGCAjUAAAfwEp.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="https://www.instagram.com/p/BM2tJQ5Axa3/?taken-by=frens_are_heathens"><div id="img" style="max-width:45%">
+      <a href="https://www.instagram.com/p/BM2tJQ5Axa3/?taken-by=frens_are_heathens"><div id="img" style="width: 45%">
 <div id="text"><p>I know where you stand</p><p>By: Violeta Olivo</p></div>
 <img src="https://archive.org/download/IllinoisClique/Fanart-Frens_are_heathens.png" style="border:3px solid #de3b21" width="99%"></div></a>
 
-      <a href="https://twitter.com/fallfarther/status/797159325806510080"><div id="img" style="max-width:43%">
+      <a href="https://twitter.com/fallfarther/status/797159325806510080"><div id="img" style="width: 39%">
 <div id="text"><p>album rep. part 2 ~ self-titled</p><p>By: Bella</p></div>
 <img src="https://pbs.twimg.com/media/CxAUK_bUQAAFa2Z.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="https://twitter.com/emily_simpsonnn/status/781821634755768320"><div id="img" style="max-width:46%">
-<div id="text"><p>//Lane Bøy//</p><p>By: Emily Simpson</p></div>
-<img src="https://pbs.twimg.com/media/CtmWnhRUMAA59Ak.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
-      
-      <a href="https://twitter.com/jxxkeee/status/789595383756447748"><div id="img" style="max-width:57%">
-<div id="text"><p>TØP Era Mashup</p><p>By: Jake</p></div>
-<img src="https://pbs.twimg.com/media/CvU00AxWEAAbQfJ.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
-      
-      <a href="https://twitter.com/bailey_clique/status/772505448062648320"><div id="img" style="max-width:32%">
+      <a href="https://twitter.com/bailey_clique/status/772505448062648320"><div id="img" style="width: 51%">
 <div id="text"><p>.::don't be afraid, we're going home::.</p><p>By: Bailey</p></div>
 <img src="https://pbs.twimg.com/media/Crh9mo1WEAAs8UE.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
 
@@ -844,18 +682,38 @@ body {
       
       <br><br><font color="white" size="5">The Night We Stole Christmas</font><br>
       <font color="white" size="3">December 3rd, 2015</font><br><br>
+
+      <a href="http://frontrowmusicnews.com/alternative/tnwsc-1-twenty-one-pilots/"><div id="img" style="width: 47.5%">
+<div id="text"><p>Sold Out</p><p></p></div>
+<img src="http://frontrowmusicnews.com/wp-content/uploads/2015/12/20151203-twenty-one-pilots-0051.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="https://twitter.com/catsordye/status/672544076600856576"><img src="https://pbs.twimg.com/media/CVVbQxBWoAEEoDq.jpg" style="border:3px solid #de3b21" width="43%"></a>
+      <a href="https://twitter.com/catsordye/status/672544076600856576"><div id="img" style="width: 42.5%">
+<div id="text"><p>chicagø may be cold, but our clique is fire |-/</p><p></p></div>
+<img src="https://pbs.twimg.com/media/CVVbQxBWoAEEoDq.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="http://frontrowmusicnews.com/alternative/tnwsc-1-twenty-one-pilots/"><div id="img" style="width: 45%">
+<div id="text"><p>Can you save my...</p><p></p></div>
+<img src="http://frontrowmusicnews.com/wp-content/uploads/2015/12/20151203-twenty-one-pilots-0651.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="http://gapersblock.com/transmission/2015/12/04/twenty_one_pilots_makes_young-person_angstecstatic/"><div id="img" style="width: 45%">
+<div id="text"><p>...Heavy Dirty Soul</p><p></p></div>
+<img src="http://gapersblock.com/transmission/IMG_0987.JPG" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="http://news.medill.northwestern.edu/chicago/christmas-stolen-by-four-nights-of-rock-music/dsc04212-copy/"><div id="img" style="width: 45%">
+<div id="text"><p></p><p></p></div>
+<img src="http://news.medill.northwestern.edu/chicago/wp-content/uploads/sites/3/2015/12/DSC04212-copy-1024x682.jpg" style="border:3px solid #de3b21" width="99%"></div></a>
+
+      <a href="http://gapersblock.com/transmission/2015/12/04/twenty_one_pilots_makes_young-person_angstecstatic/"><div id="img" style="width: 45%">
+<div id="text"><p>spontaneous chants of "TY-LER!" bloomed at various silent points in the set.</p><p>-Zack Blumenfeld</p></div>
+<img src="http://gapersblock.com/transmission/IMG_1083.JPG" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="http://www.reelbearmedia.com/blog/2014/10/10/61-photos-of-twenty-one-pilots-youve-probably-already-seen"><img src="https://static1.squarespace.com/static/53bb03fbe4b0b2f98ba01a32/54387874e4b0779de4eb05b5/54387897e4b0b18459a84e50/1412987033850/Chicago-24.jpg" style="border:3px solid #de3b21" width="48%"></a>
+      <a href="https://twitter.com/burgonioo"><div id="img" style="width: 45.5%">
+<div id="text"><p></p><p></p></div>
+<img src="https://archive.org/download/IllinoisClique/December3-Kaylla1.png" style="border:3px solid #de3b21" width="99%"></div></a>
       
-      <a href="http://gapersblock.com/transmission/2015/12/04/twenty_one_pilots_makes_young-person_angstecstatic/"><img src="http://gapersblock.com/transmission/IMG_1083.JPG" style="border:3px solid #de3b21" width="45%"></a>
-      
-      <a href="http://www.reelbearmedia.com/blog/2014/10/10/61-photos-of-twenty-one-pilots-youve-probably-already-seen"><img src="http://gapersblock.com/transmission/IMG_0987.JPG" style="border:3px solid #de3b21" width="45%"></a>
-      
-      <a href="https://twitter.com/burgonioo"><img src="https://archive.org/download/IllinoisClique/December3-Kaylla1.png" style="border:3px solid #de3b21" width="46%"></a>
-      
-      <a href="https://twitter.com/flyingcookies"><img src="https://archive.org/download/IllinoisClique/December3-Jenifer1.png" style="border:3px solid #de3b21" width="45%"></a>
+      <a href="https://twitter.com/flyingcookies"><div id="img" style="width: 44.5%">
+<div id="text"><p>Silent in the trees</p><p></p></div>
+<img src="https://archive.org/download/IllinoisClique/December3-Jenifer1.png" style="border:3px solid #de3b21" width="99%"></div></a>
 </div>
       
       </div>
@@ -863,8 +721,6 @@ body {
         <p>Copyright © 2016 Illinois Clique<br>
         <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
     </div></div></div>
-<div id="widget-preview" class="mt10" style="min-height:0px; max-height: 327px;">
-<a target="_blank" class="badge-widget" style="border: medium none; background-image: url(&quot;https://funds.gofundme.com/css/3.0_donate/red/widget.png&quot;); visibility: visible;" href="//www.gofundme.com/HelpIllinoisClique?utm_medium=wdgt" title="Visit this page now.">Click to Donate Now!</a></div>
       
 </body>
 </html>
