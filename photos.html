@@ -28,6 +28,23 @@ setTimeout(function(time){
 });
 </script>
 
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 
 
 <html>
@@ -585,6 +602,7 @@ body {
 </head>
 
 <body ondragstart="returnfalse" onselectstart="return false" link="#de3b21" alink="#ffffff" bgcolor="#000000" vlink="#ffffff">
+<a name="top"></a>
 
 <div id="loader-wrapper">
   <div id="logo"><img src="https://archive.org/download/IllinoisClique/IllinoisCliqueLoad.png" width="250px"></div>
@@ -598,7 +616,7 @@ body {
   <div class="form">
   <div class="header"> <div class="header_cap">
      <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
-     <div class="banner"><a href="index.html"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
+     <div class="banner"><a href="#top"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
      <img src="https://archive.org/download/IllinoisClique/Title.png" class="title">    
  
     <a href="index.html"><img src="https://archive.org/download/IllinoisClique/Tab_1.png" class="tab"></a>
