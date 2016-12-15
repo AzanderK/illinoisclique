@@ -46,6 +46,9 @@ $(function() {
 </script>
 
 <script>
+$(window).resize(function() {
+   if ($(this).width() > 1000) {
+
 $(window).scroll(function(){				 
 	$('.container p').each(function(){
     	var scrollTop     = $(window).scrollTop(),
@@ -61,8 +64,15 @@ $(window).scroll(function(){
 			}
 	});
 });
-</script>
 
+   }
+});
+</script>
+<script>
+$(document).ready(function() {
+   $(window).resize();
+});
+</script>
 
 
 <html>
@@ -521,7 +531,7 @@ body {
 }
 .right-content p {
     margin: 150px 0 30px;
-    text-indent: 25px;
+    text-indent: 40px;
 }
 .container p {
        -webkit-transition: all 0.7s ease-in-out;
@@ -529,14 +539,6 @@ body {
        -ms-transition: all 0.7s ease-in-out;
        -o-transition: all 0.7s ease-in-out;
        transition: all 0.7s ease-in-out;	
-}
-.left-content .more-padding {
-  padding-right: 0;
-  display: none;
-}
-.right-content .more-padding {
-  padding-left: 0;
-  display: none;
 }
 }
 
