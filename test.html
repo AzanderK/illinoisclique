@@ -74,6 +74,15 @@ $(document).ready(function() {
 });
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("h1").click(function(){
+        $("h2").toggle();
+    });
+});
+</script>
+
 
 <html>
 <head>
@@ -335,7 +344,21 @@ body {
 .right-content .more-padding {
   padding-left: 10px;
 }
-
+.listbutton{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background:url(https://archive.org/download/IllinoisClique/SetlistButton.png) no-repeat scroll 0 0 transparent;
+    z-index: 21;
+}
+.setlist{
+    position: absolute;
+    right: -100%;
+    top: 0px;
+    z-index: 20;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -755,7 +778,17 @@ Lead vocalist and keyboardist, Tyler Joseph and drummer, Josh Dun have been imme
 <br>
 
 
-  <a name="date1"><div class="left-content"><p>July 16th,<br>2011</p></div></a><div class="right-content"><p>Tyler and Josh perform infamously in front of only 12 people, at the Park Ridge VFW. This was their first show outside of their home state. It was featured in Episode 6 of the ‘Regional at Best: The Web Series’.</p></div><br>
+  <a name="date1"><div class="left-content">
+<h1>
+<div class="listbutton"></div>
+</h1>
+<h2 hidden>
+<div class="setlist">
+<div style="text-align: center;" class="setlistImage"><a href="http://www.setlist.fm/setlist/twenty-one-pilots/2016/le-zenith-paris-france-23fa7c27.html" title="twenty one pilots Setlist Le Zénith, Paris, France 2016, EMØTIONAL RØADSHØW WØRLD TØUR" target="_blank"><img src="http://www.setlist.fm/widgets/setlist-image-v1?id=23fa7c27&fg=ffffff&border=de3b21&bg=000000" alt="twenty one pilots Setlist Le Zénith, Paris, France 2016, EMØTIONAL RØADSHØW WØRLD TØUR" style="border: 0;" /></a></div>
+</div>
+</h2>
+
+<p>July 16th,<br>2011</p></div></a><div class="right-content"><p>Tyler and Josh perform infamously in front of only 12 people, at the Park Ridge VFW. This was their first show outside of their home state. It was featured in Episode 6 of the ‘Regional at Best: The Web Series’.</p></div><br>
       <iframe style="margin-right: 100%; border:3px solid #de3b21" width="650px" height="365px" frameborder="0" src="https://www.youtube.com/embed/XVnjATSeok0"></iframe><br>
 
   <a name="date2"><div class="left-content"><p>July 3rd,<br>2012</p></div></a><div class="right-content"><p>Tyler and Josh play their second Illinois show in Joliet, at a small club called "Mojoes".</p>
