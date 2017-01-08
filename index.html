@@ -15,7 +15,6 @@ quotes[8] = "''I think as soon as I learned my first drum beat was when I realiz
     
 var q = quotes.length;
 var whichquote=Math.round(Math.random()*(q-1));
-
 function showquote(){
     document.getElementById('quote').innerHTML = quotes[whichquote];}
 showquote();
@@ -123,8 +122,8 @@ $(function() {
     left:0;
     width: 100%;
     height:auto;
-    background: url(http://www.twentyonepilots.com/sites/g/files/g2000004896/f/201612/desktop_staticwave.png) repeat scroll 0 0 black;
-    border-bottom: 3px solid #ffffff;
+    background: transparent;
+    border-bottom: 12px solid #de3b21;
 }
 .header{
     position:absolute;
@@ -313,21 +312,6 @@ body {
     background:transparent;
     cursor: pointer;
 }
-.promo{
- right: 0px;
- top: 0px;
- width: 20%;
- height: auto;
- position: absolute;
- text-align: center;
- padding: 25px;
- background: transparent;
- z-index: 100;
- font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-
-
 @media only screen and (max-width: 1000px) {
 .form {
     width:500px;
@@ -365,8 +349,7 @@ body {
     left:0;
     width: 100%;
     height:auto;
-    background: url(https://archive.org/download/IllinoisClique/Header-Fix.png) no-repeat scroll 0 0 black;
-    background-size: 100% auto;
+    background: transparent;
     border-bottom: 12px solid #de3b21;
 }
 .header{
@@ -517,17 +500,8 @@ body {
     letter-spacing: 5px;
     word-spacing: 3px;
 }
-.promo{
- visibility: hidden;
 }
-}
-
-
-
 /* Loader */
-
-
-
   #quotebox{
     position: fixed;
     color: white;
@@ -703,8 +677,6 @@ body {
       -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
        transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
   }
-
-
     </style>
 </head>
 
@@ -736,15 +708,9 @@ body {
 
 </div>
 
-<a href="https://smarturl.it/TOPxMM"><div class="promo"><img src="http://www.twentyonepilots.com/sites/g/files/g2000004896/f/201612/topxmm.png"><br>
-<img src="http://www.twentyonepilots.com/sites/g/files/g2000004896/f/201612/dots_image.png"><br>
-<div style="background:black; opacity:0.9;"><font color="white" size="2">Click to Download<br>For Free</font><br>
-<font color="white" size="1">*Until January 18th*</font>
-</div></div></a>
-
   <div class=form>
   <div class="header"> <div class="header_cap">
-     <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img" style="opacity:0">
+     <img src="https://archive.org/download/IllinoisClique/Header-Fix.png" class="header_img">
      <div class=banner><a href="#top"><img src="https://archive.org/download/IllinoisClique/IllinoisClique.png" width="200px"></a></div>
      <img src="https://archive.org/download/IllinoisClique/Title.png" class="title"> 
  
@@ -808,8 +774,8 @@ body {
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div></div>
     <div class="footer">
-        <p>Copyright © 2016 Illinois Clique<br>
-        <a href="mailto:illinoisclique@gmail.com?subject=BetaReport"><font size="2">Report An Issue</font></a></p>
+        <p><font size="2">Copyright © 2017 Illinois Clique<br>
+        <a href="mailto:illinoisclique@gmail.com?subject=WebReport">Report An Issue</font></a></p>
       </div></div></div>
       
 </body>
